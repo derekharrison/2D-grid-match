@@ -41,25 +41,25 @@ std::string grid_search(std::vector<std::string> G, std::vector<std::string> P) 
 
 int main(int argc, char* argv[]) {
 
-	std::vector<std::string> G;
-	std::vector<std::string> P;
+    std::vector<std::string> G;
+    std::vector<std::string> P;
 
-	//Create grid
-	G.push_back("32315");
-	G.push_back("13345");
-	G.push_back("15365");
-	G.push_back("31375");
+    //Create grid
+    G.push_back("32315");
+    G.push_back("13345");
+    G.push_back("15365");
+    G.push_back("31375");
 
-	//Create pattern
-	P.push_back("45");
-	P.push_back("65");
+    //Create pattern
+    P.push_back("45");
+    P.push_back("65");
 
-	//Check if the pattern is contained in the grid
-	std::string result = grid_search(G, P);
+    //Check if the pattern is contained in the grid
+    std::string result = grid_search(G, P);
 
-	//Print results
-	std::cout << "is there a match? " << result << std::endl;
-	std::cout << "done" << std::endl;
+    //Print results
+    std::cout << "is there a match? " << result << std::endl;
+    std::cout << "done" << std::endl;
 
-	return 0;
+    return 0;
 }
